@@ -7,4 +7,5 @@
  * To change this template use File | Settings | File Templates.
  */
 
-echo "Temporary Index File";
+echo "Temporary Index File<br>";
+echo "Test commit message";
