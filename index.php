@@ -8,4 +8,4 @@
  */
 
 echo "Temporary Index File<br>";
-echo "Test commit message";
+echo "CI Test Message";
