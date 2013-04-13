@@ -46,6 +46,7 @@
 				<fieldset>
 					<input type="text" name="createUserName" placeholder="Name">
 					<input type="text" name="createUserEmail" placeholder="Email Address">
+					<input type="number" name="createUserNumber" placeholder="Phone Number"><br />
 					<input type="password" name="createUserPassword" placeholder="Password"><br />
 					<button type="submit" name="createSubmit" class="btn btn-primary">Create Account</button>
 				</fieldset>
