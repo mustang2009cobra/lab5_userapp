@@ -11,7 +11,7 @@ class Users_model extends CI_Model {
 		$data = array(
 			'email' => $formData['createUserEmail'],
 			'name' => $formData['createUserName'],
-			'number' => $formData['createUserNumber'],
+			'phone' => $formData['createUserNumber'],
 			'password' => $formData['createUserPassword']
 		);
 		
