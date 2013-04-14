@@ -35,11 +35,9 @@
 			<p>Notification Data:</p>
 			<div>
 			<ul>
-				<?php foreach ($formData as $key=>$value):?>
+				<?php print_r($formData);?>
 
-				<li><?php echo $key -> $value;?></li>
-
-				<?php endforeach;?>
+				
 			</ul>
 			</div>
 		</div>
