@@ -33,6 +33,7 @@
 		<div class="span8">
 			<h3>Events</h3>
 			<p>Notifications:</p>
+			<?php print_html_r($data); ?>
 		</div>
 		<div class="span2"></div>
 	</div>
