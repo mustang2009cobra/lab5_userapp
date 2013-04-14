@@ -9,9 +9,13 @@ class eventController extends CI_Controller {
 	
 	public function recieve(){
 		$formData = $this->input->post(NULL, TRUE);
-		$data = $formData;
-        //$data = array();
-		$data["note"]="formData";
+		
+        $data = array();
+		
+		
+		$formData["type"]="formData";
+		$data["formData"] = $formData;
+		
 		$this->load->view('templates/header');
 		$this->load->view('pages/events', $data);
 		$this->load->view('templates/footer');

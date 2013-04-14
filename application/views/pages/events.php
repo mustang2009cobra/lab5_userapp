@@ -32,8 +32,16 @@
 		<div class="span2"></div>
 		<div class="span8">
 			<h3>Events</h3>
-			<p>Notifications:</p>
-			<div><?php print_r($data); ?></div>
+			<p>Notification Data:</p>
+			<div>
+			<ul>
+				<?php foreach ($formData as $key=>$value):?>
+
+				<li><?php echo $key -> $value;?></li>
+
+				<?php endforeach;?>
+			</ul>
+			</div>
 		</div>
 		<div class="span2"></div>
 	</div>
