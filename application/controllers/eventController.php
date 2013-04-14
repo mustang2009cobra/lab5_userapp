@@ -11,7 +11,7 @@ class eventController extends CI_Controller {
 		$formData = $this->input->post(NULL, TRUE);
 		$data = $formData;
         //$data = array();
-
+		$data["note"]="formData";
 		$this->load->view('templates/header');
 		$this->load->view('pages/events', $data);
 		$this->load->view('templates/footer');
