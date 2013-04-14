@@ -10,7 +10,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </a>
-	  <a class="brand" href="<?= site_url('/main/index'); ?>">User App</a>
+	  <a class="brand" href="<?= site_url('/main/index'); ?>">Text Pushy</a>
 	</div>
   </div>
 </div>

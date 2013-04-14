@@ -10,7 +10,7 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </a>
-	  <a class="brand" href="<?= site_url('/main/index'); ?>">User App</a>
+	  <a class="brand" href="<?= site_url('/main/index'); ?>">Text Pushy</a>
 	  <div class="nav-collapse collapse">
 		<ul class="nav pull-right">
 		  <li><a href="<?= site_url('/main/login'); ?>">Login/Register</a></li>
@@ -24,15 +24,16 @@
 	<div class="row">
 		<div class="span2"></div>
 		<div class="span8">
-			<h1>Some User App</h1>
+			<h1>Text Pushy</h1>
 		</div>
 		<div class="span2"></div>
 	</div>
 	<div class="row">
 		<div class="span2"></div>
 		<div class="span8">
-			<h3>Welcome to the User App!</h3>
-			<p>Put whatever you like on this main page</p>
+			<h3>Welcome to Text Pushy!</h3>
+			<p>This is a module of Pushy that will send text notifications of 
+				Google Calendar events to your phone.</p>
 		</div>
 		<div class="span2"></div>
 	</div>

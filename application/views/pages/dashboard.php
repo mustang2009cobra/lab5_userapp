@@ -13,7 +13,7 @@ if(!$user){
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </a>
-	  <a class="brand" href="<?= site_url('/main/index'); ?>">User App</a>
+	  <a class="brand" href="<?= site_url('/main/index'); ?>">Text Pushy</a>
 	  <div class="nav-collapse collapse">
 		<ul class="nav pull-right">
 		  <li><a href="<?= site_url('/users/logout'); ?>">Logout</a></li>
@@ -41,7 +41,7 @@ if(!$user){
 	<div class="row">
 		<div class="span2"></div>
 		<div class="span8">
-			<h1>User Dashboard</h1>
+			<h1>User Account Data</h1>
 		</div>
 		<div class="span2"></div>
 	</div>
@@ -49,7 +49,7 @@ if(!$user){
 		<div class="span2"></div>
 		<div class="span8">
             <p>Test Content - More to come later</p>
-            <p>Test Commit Line</p>
+            <p>Maybe a user edit account here?</p>
 		</div>
 		<div class="span2"></div>
 	</div>
