@@ -19,6 +19,9 @@
 		//$model->load->library('Twilio');
 		//require("../third_party/twilio-php/Services/Twilio.php");
 		
+		if($to{0}!=1)
+			$to='1'.$to;
+		
 		$from = "+14357280603";
 		$to = "+".$to;
 		$sid = "AC8dcc306c08bac183a3f450f52ae759f2";
