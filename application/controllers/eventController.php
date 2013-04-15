@@ -23,7 +23,7 @@ class eventController extends CI_Controller {
 		
 		
 		//if event contains email, lookup phonenumber registered to email, send message. 
-		parseEvent($formData);
+		parseEvent($formData,$this);
 	}
 	
 	

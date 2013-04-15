@@ -1,6 +1,6 @@
 <?php
 
-	function parseEvent($formData){
+	function parseEvent($formData, $model){
 		if(!isset($formData["email"])||!isset($formData["message"]))
 			return;
 			
@@ -8,7 +8,7 @@
 		$message = $formData["message"];
 		
 		//lookup number of first user found. 
-		$number = $this->users_model->getNumber($email);
+		$number = $model->users_model->getNumber($email);
 		
 		sendText($number, $message);
 		
