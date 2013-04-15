@@ -42,7 +42,7 @@ class Users_model extends CI_Model {
 	}
 	
 	public function getNumber($email){
-		 $query = $this->db->get_where('users', array('email' => $email);
+		 $query = $this->db->get_where('users', array('email' => $email));
 		  if($query->num_rows != 0){
             $result = $query->result();
             $user = $result[0];           
