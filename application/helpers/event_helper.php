@@ -15,8 +15,8 @@
 	}
 	
 	function sendText($to, $message, $model){
-		$model->load->add_package_path(APPPATH.'third_party/twilio-php/Services/');
-		$model->load->library('Twilio');
+		require(APPPATH.'third_party/twilio-php/Services/Twilio.php');
+		//$model->load->library('Twilio');
 		//require("../third_party/twilio-php/Services/Twilio.php");
 		
 		$from = "+14357280603";
