@@ -25,7 +25,7 @@ class eventController extends CI_Controller {
 		parseEvent($formData);
 	}
 	
-	private function parseEvent($formData){
+	function parseEvent($formData){
 		if(!isset($formData["email"])||!isset($formData["message"]))
 			return;
 			
@@ -39,7 +39,7 @@ class eventController extends CI_Controller {
 		
 	}
 	
-	private function sendText($to, $message){
+	function sendText($to, $message){
 	
 		require("../twilio-php/Services/Twilio.php");
 		
