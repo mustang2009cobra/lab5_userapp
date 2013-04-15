@@ -9,7 +9,7 @@
 		
 		//lookup number of first user found. 
 		$user = $model->users_model->getNumber($email);
-		//print_r($number);
+		print_r($user);
 		sendText($user->number, $message, $model);
 		
 	}
