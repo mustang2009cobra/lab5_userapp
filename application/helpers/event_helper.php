@@ -10,13 +10,14 @@
 		//lookup number of first user found. 
 		$number = $model->users_model->getNumber($email);
 		
-		sendText($number, $message);
+		sendText($number, $message, $model);
 		
 	}
 	
-	function sendText($to, $message){
-	
-		require("../third_party/twilio-php/Services/Twilio.php");
+	function sendText($to, $message, $model){
+		$model->load->add_package_path(APPPATH.'third_party/twilio-php/Services/');
+		$model->library('Twilio');
+		//require("../third_party/twilio-php/Services/Twilio.php");
 		
 		$from = "+14357280603";
 		$to = "+".$to;
