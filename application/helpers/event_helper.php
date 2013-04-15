@@ -16,7 +16,7 @@
 	
 	function sendText($to, $message){
 	
-		require("../twilio-php/Services/Twilio.php");
+		require("../third_party/twilio-php/Services/Twilio.php");
 		
 		$from = "+14357280603";
 		$to = "+".$to;
