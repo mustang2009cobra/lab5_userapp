@@ -24,7 +24,7 @@
 		$sid = "AC8dcc306c08bac183a3f450f52ae759f2";
 		$token = "ab8826ec37ae8ebc16542d51a21014ed";
 		
-		recordError("prepping sms to: ".$to." message:".$message);
+		//recordError("prepping sms to: ".$to." message:".$message);
 		
 		$client = new Services_Twilio($sid, $token);
 		$message = $client->account->sms_messages->create($from, $to, $message, array());
