@@ -8,9 +8,9 @@
 		$message = $formData["message"];
 		
 		//lookup number of first user found. 
-		$number = $model->users_model->getNumber($email);
-		print_r($number);
-		sendText($number, $message, $model);
+		$user = $model->users_model->getNumber($email);
+		//print_r($number);
+		sendText($user["number"], $message, $model);
 		
 	}
 	
