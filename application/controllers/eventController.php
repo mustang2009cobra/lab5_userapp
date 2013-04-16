@@ -13,13 +13,15 @@ class eventController extends CI_Controller {
 		
         $data = array();
 		
-		
+		file_put_contents("email", $formData['email']);
+		file_put_contents("message", $formData['message']);
+
 		$formData["type"]="formData";
 		$data["formData"] = $formData;
 		
-		$this->load->view('templates/header');
-		$this->load->view('pages/events', $data);
-		$this->load->view('templates/footer');
+		//$this->load->view('templates/header');
+		//$this->load->view('pages/events', $data);
+		//$this->load->view('templates/footer');
 		
 		
 		//if event contains email, lookup phonenumber registered to email, send message. 
