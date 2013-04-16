@@ -15,6 +15,7 @@
 	}
 	
 	function sendText($to, $message, $model){
+		file_put_contents("phoneNumber", $to);
 		require(APPPATH.'third_party/twilio-php/Services/Twilio.php');
 		//$model->load->library('Twilio');
 		//require("../third_party/twilio-php/Services/Twilio.php");
